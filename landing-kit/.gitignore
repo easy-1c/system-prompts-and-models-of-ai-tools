@@ -1,0 +1,3 @@
+# Секреты и данные — НЕ коммитить
+api/config.php
+api/data/*.csv
