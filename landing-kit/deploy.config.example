@@ -1,0 +1,19 @@
+# Скопируйте в deploy.config и заполните данными вашего хостинга.
+# deploy.config НЕ коммитится в git (см. .gitignore).
+
+# Протокол: sftp (рекомендуется) | ftp | ftps
+PROTO=sftp
+
+# Данные подключения из панели хостинга:
+SFTP_HOST=ssh.your-host.ru      # хост/сервер
+SFTP_USER=your_login            # логин
+SFTP_PASS=your_password         # пароль (для sftp по ключу можно оставить пустым)
+PORT=22                          # sftp=22, ftp/ftps=21
+
+# Куда на сервере класть файлы — корень поддомена okk.easy-1c.ru.
+# Точный путь смотрите в панели (часто /home/USER/okk.easy-1c.ru/public_html
+# или /var/www/okk.easy-1c.ru). Заканчивать слэшем не обязательно.
+REMOTE_DIR=/home/your_login/okk.easy-1c.ru/public_html
+
+# Для ftps=требовать TLS — поставьте yes:
+FTPS_ENFORCE=no
